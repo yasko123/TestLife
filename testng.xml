@@ -8,6 +8,8 @@
 
 
             <!--<class name="Tests.Test08"/> Добавить биллера в избранное и оплатить его-->
+            <class name="Tests.Test_01"/> first test
+
 
 
         </classes>
