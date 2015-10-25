@@ -2,14 +2,10 @@ package Tests;
 
 import DataDrivenPack.DataDrivenClass;
 import core.BaseTest;
-import core.Utils;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import ui_Layer.HomePage;
 import ui_Layer.Wall;
-
-import static core.Utils.findCSS;
-import static core.Utils.leftBarOnPay;
 
 /**
  * Created by YaskoYA on 27.07.2015.
@@ -26,21 +22,21 @@ public class Test_01 extends BaseTest{
         homePage = new HomePage();
         wall = new Wall();
 
-        Reporter.log("<b>TEST CASE name: Создать пост с текстом</b>");
+        Reporter.log("<b>TEST CASE name: РЎРѕР·РґР°С‚СЊ РїРѕСЃС‚ РЅР° СЃС‚РµРЅРµ</b>");
 
 
-        // Кликаем по "Стена" на Главной странице
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ" пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         homePage.wallButtonOnTheMainPageClick();
-        // Проверяем наличее поля для создания поста
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         wall.checkNewPostFld();
-        // Добавляем новый пост с рандомным текстом
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         wall.createNewPost(randomText);
-        // кликаем по кнопке Опубликовать
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         wall.clickAddPostButton();
-        // Проверяем наличие созданного поста на стене
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         wall.checkNewPost(randomText);
 
 
-        Reporter.log("<br>Test was successful. Пост с текстом создан на стене.</br>");
+        Reporter.log("<br>Test was successful. пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.</br>");
     }
 }
