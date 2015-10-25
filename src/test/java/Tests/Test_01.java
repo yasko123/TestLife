@@ -5,6 +5,7 @@ import core.BaseTest;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import ui_Layer.HomePage;
+import ui_Layer.UploadFilePopUp;
 import ui_Layer.Wall;
 
 /**
@@ -14,6 +15,7 @@ public class Test_01 extends BaseTest{
 
     private HomePage homePage;
     private Wall wall;
+    private UploadFilePopUp uploadFilePopUp;
 
 
     @Test(dataProvider = "Test_01", dataProviderClass = DataDrivenClass.class)
@@ -21,6 +23,8 @@ public class Test_01 extends BaseTest{
     public void test_01(String randomText) {
         homePage = new HomePage();
         wall = new Wall();
+        uploadFilePopUp = new UploadFilePopUp();
+
 
         Reporter.log("<b>TEST CASE name: Создать пост на стене</b>");
 
